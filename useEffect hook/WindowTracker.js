@@ -4,7 +4,7 @@ export default function WindowTracker() {
     
     const [windowWidth, setWindowWidth] = React.useState(window.innerWidth)
     
-    React.useEffect(async () => {
+    React.useEffect(() => {
         function watchWidth() {
             console.log("Setting up...")
             setWindowWidth(window.innerWidth)
